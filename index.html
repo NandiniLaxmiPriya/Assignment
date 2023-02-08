@@ -19,7 +19,7 @@
                 height: 100%;
                 background-size: cover;
                 background-attachment: scroll;
-                min-height: 768px;
+
                 font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
             .div1{
@@ -128,13 +128,26 @@
                 letter-spacing: 1px;
             }
             @media only screen and (max-width: 768px) {
-                [class="foorm"] {
-                    grid-auto-rows: minmax(50%,auto);
-                    
-                    background-color: rgb(228, 207, 255);
+                [class="div1"] {
+                    margin:auto;
+                height:100%;
+                width:  80%;
                      }
-                    
-                     
+                [class="div2"]{
+                   
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    display: grid;
+                grid-template-columns: 1fr 1fr;
+                }
+                [class=".div2-1"]{
+                  align-self: flex-end;
+              
+                }
+                [class=".div2-2"]{
+                    align-self: flex-start;
+                
+                }
             }
         </style>
     </head>
